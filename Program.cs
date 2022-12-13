@@ -12,7 +12,7 @@ for (int i = 0; i < array.GetLength(0); i++)
 {
     for (int j = 0; j < array.GetLength(1); j++)
     {
-        array[i, j] = new Random().Next(200) / 10.0 - 10;
+        array[i, j] = Math.Round(new Random().NextDouble() * 19.0 - 9, 1);
         Console.Write($"{array[i, j]} ");
     }
     Console.WriteLine();
