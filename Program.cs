@@ -19,7 +19,7 @@ int.TryParse(Console.ReadLine()!, out a);
 Console.WriteLine($"Введите позицию элемента по горизонтали: ");
 int.TryParse(Console.ReadLine()!, out b);
 
-if (a < array.GetLength(0) && b < array.GetLength(1))
+if (a >= 0 && a < array.GetLength(0) && b >= 0 && b < array.GetLength(1))
     Console.WriteLine($"{array.GetValue(a, b)}");
 else
 {
